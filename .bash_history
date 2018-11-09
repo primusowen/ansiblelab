@@ -1,128 +1,3 @@
-ansible webserver -m setup -a 'filter=ansible_ip*'
-ansible webserver -m setup -a | more
-ansible webserver -m setup | more
-ansible webserver -m setup -a 'filter='*ipv4*'
-ansible webserver -m setup -a 'filter=*ipv4*'
-pwd
-vi custom.fact
-ls -l
-cd /etc/ansible/fact.d
-cd /etc/ansible/facts.d
-ls -l
-vi vi setup_facts.yml
-ansible webserver -m setup -a 'filter=ansible_local'
-ansib
-ansible-playbook --syntax-check seetup_facts.yml
-ansible-playbook --syntax-check setup_facts.yml
-ls
-pwd
-cd ~dev-vars-facts
-cd ~/dev-vars-facts
-ls
-ansible webserver -m setup
-ls 
-cd /etc/ansbible/facts.d
-ls
-cd /etc/ansible/facts.d
-cd /etc/ansible
-cd facts.d
-ls -l
-pwd
-lab manage-variables-facts setup
-cd /etc/ansible
-ls
-cd ~/dev-vars-facts
-ansible webserver -m setup
-ansible webserver -m setup -a 'filter=ansible_user'
-ls -l
-cat custom.fact 
-cd /etc/ansible/
-ls
-ls -l
-vi setup_facts.yml
-id
-ls -l
-pwd
-vi tt
-pwd
-ls -l
-cd ~dev-vars-facts
-cd ~/dev-vars-facts
-ls -l
-vi setup_facts.yml
-ansible-playbook --syntax-check setup_facts.yml
-vi setup_facts.yml
-ansible-playbook --syntax-check setup_facts.yml
-vi setup_facts.yml
-ansible-playbook --syntax-check setup_facts.yml
-ansible webserver -m setup -a 'filter=ansible_local'
-ansible-playbook setup_facts.yml
-ansible webserver -m setup -a 'filter=ansible_local'
-ls
-more setup_facts.yml
-cat custom.fact
-vi setup_facts.yml
-ansible-playbook setup_facts.yml
-ls
-ls -l
-cat inventory 
-ls -l
-cat vi
-ping lamp
-cat inventory 
-vi inventory 
-ls
-vi setup_facts.yml 
-ansible-playbook setup_facts.yml
-ansible webserver -m setup -a 'filter=ansible_local'
-ls -l
-vi playbook.yml
-ansible-playbook --syntax-check playbook.yml 
-vi playbook.yml
-ansible-playbook --syntax-check playbook.yml 
-ansible servera.lab.example.com -m command -a 'systemctl status httpd'
-ansible-playbook playbook.yml
-ansible servera.lab.example.com -m command -a 'systemctl status httpd'
-lab manage-variables-facts grade
-lan manage-variables-facts cleanup
-lab manage-variables-facts cleanup
-cd ~/demo-vars-inclusions
-history | grep setup
-lab demo-vars-inclusions setuuup
-lab demo-vars-inclusions setup
-history | grep demo
-history | grep lab
-history | grep l
-history | grep lab
-lab manage-vars-inclusions setup
-lab
-lab --help
-exit
-lab manage-variables-inclusions setup
-cd ~/dev-vars-inclusions/
-mkdir tasks && cd tasks
-vi environment.yml
-ansible --check_sytax environment.yml 
-cd ..
-mkdir vars
-cd vars
-vi variables.yml
-cd ..
-vi playbook.yml
-cat playbook.yml 
-vi playbook.yml
-ansible-playbook --syntax-check
-ansible-playbook --syntax-check playbook.yml 
-vi playbook.yml
-ansible-playbook --syntax-check playbook.yml 
-vi playbook.yml
-ansible-playbook --syntax-check playbook.yml 
-vi playbook.yml
-ansible-playbook --syntax-check playbook.yml 
-ansible-playbook playbook.yml
-vi playbook.yml
-ls -l
-cd vars
 ls -l
 cat *
 cd .
@@ -998,3 +873,128 @@ lab provision-review setup
 lab provision-review solve
 lab provision-project setup
 lab org-review grade
+lab host-inventory setup
+sudo u - 
+sudo su - 
+lab install grade
+lab deploy grade
+lab playbookinternet grade
+lab playbookinternet setup
+lab playbookinternet grade
+cd /home/student/imp-lab
+ls -l
+vi internet.yml
+ansible-playbook --syntax-check internet.yml 
+vi internet.yml
+ansible-playbook --syntax-check internet.yml 
+vi internet.yml
+ansible-playbook --syntax-check internet.yml 
+vi internet.yml
+ansible-playbook --syntax-check internet.yml 
+vi internet.yml
+ansible-playbook --syntax-check internet.yml 
+vi internet.yml
+ansible-playbook --syntax-check internet.yml 
+vi internet.yml
+ansible-playbook --syntax-check internet.yml 
+vi internet.yml
+ansible-playbook --syntax-check internet.yml 
+ansible-playbook internet.yml 
+lab playbookinternet grade
+lab manage-variables grade
+lab manage-variables setup
+lab manage-variables cleanup
+lab manage-variables setup
+cd ~/lab-managing-vars
+ls -l
+vi custom.fact 
+vi setup_facts.yml 
+ansible-playbook setup_facts.yml 
+ansible lamp -m setup -a
+ansible lamp -m setup -a "filter=ansible_local"
+ls -l
+cat vars/main.yml
+cat tasks/main.yml 
+ls
+ls -l
+cat playbook.
+cat playbook.yml
+ls -l
+rm *.retry
+tree
+cat playbook.yml | more
+ ansible-playbook --syntax-check playbook.yml 
+ ansible-playbook  playbook.yml 
+curl http://serverb
+ansible lamp -a 'systemctl status mariad'
+ansible lamp -a 'systemctl status mariadb'
+curl http://serverb
+lab manage-variables grade
+lab task-control grade
+lab task-control clean
+lab task-control cleanup
+lab task-control setup
+cd ~/lab-task-control
+ls -l
+ls
+ls -l
+vi install_packages.yml 
+cat configure_web.yml 
+cat configure_web.yml  | more
+ls -l
+cat configure_firewall.yml 
+vi  configure_firewall.yml 
+ls -l'
+ls -l
+vi playbook.yml 
+ansible-playbook --syntax-check playbook.yml 
+ansible-playbook  playbook.yml 
+ls
+more configure_web.yml 
+ansible-playbook  playbook.yml
+ssh serverb
+lab task-control cleanup
+ansible-playbook  playbook.yml 
+more configure_web.yml 
+  ls -l
+grep get_url *.ymlm
+grep get_url *.yml
+vi configure_web.yml 
+grep https_uri *.yml
+grep ssl_uri *.yml
+ansible-playbook  playbook.yml 
+grep get_url *.yml
+vi configure_web.yml 
+grep get_url *.yml
+grep uri *.yml
+vi playbook.yml 
+ansible-playbook  playbook.yml 
+ssh sererb
+ssh serverb
+ansible-playbook  playbook.yml 
+cd ~/lab-task-control
+ls -l
+vi install_packages.yml 
+ls 
+vi configure_web.yml 
+ansible-playbook  playbook.yml 
+vi playbook.yml 
+ansible-playbook  --syntax-check playbook.yml 
+ansible-playbook   playbook.yml 
+vi playbook.yml 
+grep https *.yml
+grep https_uri .yml
+grep https_uri *.yml
+vi configure_web.yml 
+ls -l
+vi install_packages.yml 
+vls
+ls
+vi playbook.yml 
+vi configure_web.yml 
+nslookup serverb
+ls
+vi playbook.yml 
+ansible-playbook   playbook.yml 
+vi playbook.yml 
+lab task-control grade

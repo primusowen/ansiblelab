@@ -1,11 +1,11 @@
-[ 1541686026.406107]: IMSettings-Daemon[1729]: INFO: Starting imsettings-daemon...
-[ 1541686026.406758]: IMSettings-Daemon[1729]: INFO:   [HOME=/home/student/.config/imsettings]
-[ 1541686026.407095]: IMSettings-Daemon[1729]: INFO:   [XINPUTRCDIR=/etc/X11/xinit/]
-[ 1541686026.407232]: IMSettings-Daemon[1729]: INFO:   [XINPUTDIR=/etc/X11/xinit/xinput.d/]
+[ 1541739698.097840]: IMSettings-Daemon[1761]: INFO: Starting imsettings-daemon...
+[ 1541739698.098524]: IMSettings-Daemon[1761]: INFO:   [HOME=/home/student/.config/imsettings]
+[ 1541739698.098683]: IMSettings-Daemon[1761]: INFO:   [XINPUTRCDIR=/etc/X11/xinit/]
+[ 1541739698.098918]: IMSettings-Daemon[1761]: INFO:   [XINPUTDIR=/etc/X11/xinit/xinput.d/]
 
-[ 1541686026.407448]: IMSettings-Daemon[1729]: INFO:   [MODULEDIR=/usr/lib64/imsettings]
+[ 1541739698.099118]: IMSettings-Daemon[1761]: INFO:   [MODULEDIR=/usr/lib64/imsettings]
 
-[ 1541686026.407630]: IMSettings-Daemon[1729]: INFO:   [MODULES=gsettings]
+[ 1541739698.099308]: IMSettings-Daemon[1761]: INFO:   [MODULES=gsettings]
 
 imsettings information
 ==========================
@@ -15,7 +15,7 @@ XINPUTRC: /etc/X11/xinit/xinput.d//none.conf
 	Device: fd01h/64769d	Inode: 14746156    Links: 1
 	Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
 	Context: system_u:object_r:bin_t:s0
-	Access: 2018-11-07 09:16:55.756879044 -0500
+	Access: 2018-11-09 00:01:37.944956987 -0500
 	Modify: 2014-01-24 22:11:06.000000000 -0500
 	Change: 2016-12-06 13:15:30.912548207 -0500
 	 Birth: -
@@ -27,18 +27,18 @@ DESKTOP: gnome-classic
 GUESS_DESKTOP: $GDMSESSION
 DISABLE_IMSETTINGS: 
 IMSETTINGS_DISABLE_DESKTOP_CHECK: 
-DBUS_SESSION_BUS_ADDRESS: unix:abstract=/tmp/dbus-koB1xbHtaI,guid=326387bfb9c472f567eeb5105be4430a
+DBUS_SESSION_BUS_ADDRESS: unix:abstract=/tmp/dbus-O9WjOg3KMA,guid=b7ee3352a2d3c3eaa16ff7db5be514b1
 GTK_IM_MODULE: 
 QT_IM_MODULE: xim
 XMODIFIERS: @im=none
 IMSETTINGS_MODULE: none
 IMSETTINGS_INTEGRATE_DESKTOP: yes
 
-[ 1541686033.627814]: IMSettings-Daemon[1729]: INFO: Attempting to switch IM to none [lang=en_US.UTF-8, update=false]
+[ 1541739706.163191]: IMSettings-Daemon[1761]: INFO: Attempting to switch IM to none [lang=en_US.UTF-8, update=false]
 org.gnome.settings-daemon.plugins.keyboard.active is true. imsettings is going to be disabled.
 
-[ 1541686034.139709]: IMSettings-Daemon[1729]: WARNING **: Current desktop isn't targeted by IMSettings.
+[ 1541739706.976362]: IMSettings-Daemon[1761]: WARNING **: Current desktop isn't targeted by IMSettings.
 
-[ 1541686034.143564]: GLib-GIO[1729]: CRITICAL **: g_dbus_method_invocation_return_value_internal: assertion '(parameters == NULL) || g_variant_is_of_type (parameters, G_VARIANT_TYPE_TUPLE)' failed
-[ 1541686034.392477]: IMSettings-Daemon[1729]: INFO: Unloading imesttings module: gsettings
-[ 1541686034.393210]: IMSettings-Daemon[1729]: INFO: imsettings-daemon is shut down.
+[ 1541739706.981096]: GLib-GIO[1761]: CRITICAL **: g_dbus_method_invocation_return_value_internal: assertion '(parameters == NULL) || g_variant_is_of_type (parameters, G_VARIANT_TYPE_TUPLE)' failed
+[ 1541739707.297135]: IMSettings-Daemon[1761]: INFO: Unloading imesttings module: gsettings
+[ 1541739707.297810]: IMSettings-Daemon[1761]: INFO: imsettings-daemon is shut down.

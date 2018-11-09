@@ -8,7 +8,7 @@ fonts.googleapis.com:HSTS	0	17843	1542294510478,1,0
 stats.g.doubleclick.net:HSTS	0	17843	1552576109959,1,1
 versioncheck-bg.addons.mozilla.org:HSTS	2	17844	1541740339283,1,0
 conversation.api.drift.com:HSTS	0	17840	1572974867192,1,1
-shavar.services.mozilla.com:HSTS	2	17844	1573275803364,1,1
+shavar.services.mozilla.com:HSTS	2	17844	1573283004100,1,1
 github.com:HSTS	0	17844	1573277234146,1,1
 event.api.drift.com:HSTS	0	17840	1572974866827,1,1
 self-repair.mozilla.org:HSTS	0	17840	1572974859532,1,1

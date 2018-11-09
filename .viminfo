@@ -8,19 +8,24 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/fire
+~MSle0~/uri
 
 # Command Line History (newest to oldest):
 :wq!
+:q!
+:1
+:setcolumn
+:42
+:32
+:w
+:13
 :41
 :4
 :12
 :$
-:q!
 :5
 :q
 :18
-:w
 :37
 :47
 :55
@@ -30,7 +35,6 @@
 :40
 :7
 :36
-:1
 :2
 :11
 :wq!~
@@ -48,6 +52,9 @@
 :ewwwwww@
 
 # Search String History (newest to oldest):
+?/uri
+?/get
+? \<firewalld\>
 ?/fireall
 ?/fire
 ?/always
@@ -72,57 +79,93 @@
 # Registers:
 "0	LINE	0
 	        https_uri: http://materials.example.com/task_control/https.conf
-""1	LINE	0
-	HELLO WORLD <br>
-"2	LINE	0
+"1	LINE	0
+	u
+"2	CHAR	0
+	firewalld:
+	         service: http
+	         permanent: true
+	         state: enabled
+	         immediate: yes
 	
+	     - name: httpd enabled and running
+	       service:
+	         name: httpd 
+	         enabled: true
+	         state: started
+	
+	     - name: mariadb enabled and running
+	       service:
+	         name: 
 "3	LINE	0
-	  password: "{{'passwordsaresecret'|password_hash('sha512')}}"
+	         state: started
 "4	LINE	0
-	  name: user1
+	         enabled: true
 "5	LINE	0
-	user:
+	         name: firewalld
 "6	LINE	0
-	---
+	HELLO WORLD <br>
 "7	LINE	0
-	      with_items:
+	
 "8	LINE	0
-	      poll: 0
+	  password: "{{'passwordsaresecret'|password_hash('sha512')}}"
 "9	LINE	0
-	      command:"/usr/local/bin/longfiles {{item}} /tmp/{{item}}.file"
+	  name: user1
 "b	LINE	0
-	  - name: mount the /dev/mapper/{{ luks_name }}
-	    mount: name=/{{ luks_name }} src=/dev/mapper/{{ luks_name }} fstype=xfs state=mounted
-"-	CHAR	0
-	s
+	  tags: production
+""-	CHAR	0
+	i
 
 # File marks:
-'0  6  0  ~/git-repos/my_webservers_DEV_2/templates/index.html.j2
-'1  7  15  ~/git-repos/my_webservers_DEV/templates/index.html.j2
-'2  12  0  ~/Downloads/license
-'3  12  10  ~/lab-task-control/configure_firewall.yml
-'4  18  12  ~/lab-task-control/playbook.yml
-'5  42  2  ~/lab-task-control/configure_web.yml
-'6  2  7  ~/lab-task-control/configure_web.yml
-'7  15  2  ~/lab-task-control/install_packages.yml
-'8  33  6  ~/lab-task-control/playbook.yml
-'9  34  23  ~/lab-task-control/playbook.yml
+'0  43  6  ~/lab-task-control/playbook.yml
+'1  39  20  ~/lab-task-control/playbook.yml
+'2  8  0  ~/lab-task-control/configure_web.yml
+'3  18  8  ~/lab-task-control/playbook.yml
+'4  14  25  ~/lab-task-control/install_packages.yml
+'5  1  0  ~/lab-task-control/configure_web.yml
+'6  38  10  ~/lab-task-control/playbook.yml
+'7  42  20  ~/lab-task-control/configure_web.yml
+'8  15  4  ~/lab-task-control/install_packages.yml
+'9  10  16  ~/lab-task-control/playbook.yml
 
 # Jumplist (newest first):
+-'  43  6  ~/lab-task-control/playbook.yml
+-'  39  6  ~/lab-task-control/playbook.yml
+-'  18  8  ~/lab-task-control/playbook.yml
+-'  8  0  ~/lab-task-control/configure_web.yml
+-'  1  0  ~/lab-task-control/configure_web.yml
+-'  14  25  ~/lab-task-control/install_packages.yml
+-'  15  4  ~/lab-task-control/install_packages.yml
+-'  42  4  ~/lab-task-control/configure_web.yml
+-'  38  5  ~/lab-task-control/playbook.yml
+-'  10  10  ~/lab-task-control/playbook.yml
+-'  35  6  ~/lab-task-control/configure_web.yml
+-'  15  4  ~/lab-task-control/configure_web.yml
+-'  20  2  ~/lab-task-control/configure_firewall.yml
+-'  12  0  ~/lab-task-control/configure_firewall.yml
+-'  10  0  ~/lab-managing-vars/setup_facts.yml
+-'  1  0  ~/lab-managing-vars/setup_facts.yml
+-'  7  0  ~/lab-managing-vars/custom.fact
+-'  1  0  ~/lab-managing-vars/custom.fact
+-'  43  10  ~/imp-lab/internet.yml
+-'  1  0  ~/imp-lab/internet.yml
+-'  59  0  ~/imp-lab/internet.yml
+-'  37  7  ~/imp-lab/internet.yml
+-'  36  5  ~/imp-lab/internet.yml
+-'  23  5  ~/imp-lab/internet.yml
+-'  14  11  ~/imp-lab/internet.yml
+-'  7  7  ~/imp-lab/internet.yml
+-'  57  8  ~/imp-lab/internet.yml
+-'  24  7  ~/imp-lab/internet.yml
 -'  6  0  ~/git-repos/my_webservers_DEV_2/templates/index.html.j2
 -'  1  0  ~/git-repos/my_webservers_DEV_2/templates/index.html.j2
 -'  7  15  ~/git-repos/my_webservers_DEV/templates/index.html.j2
 -'  1  0  ~/git-repos/my_webservers_DEV/templates/index.html.j2
 -'  12  0  ~/Downloads/license
 -'  1  0  ~/Downloads/license
--'  12  10  ~/lab-task-control/configure_firewall.yml
 -'  1  0  ~/lab-task-control/configure_firewall.yml
--'  18  12  ~/lab-task-control/playbook.yml
 -'  33  6  ~/lab-task-control/playbook.yml
--'  42  2  ~/lab-task-control/configure_web.yml
 -'  2  0  ~/lab-task-control/configure_web.yml
--'  1  0  ~/lab-task-control/configure_web.yml
--'  15  2  ~/lab-task-control/install_packages.yml
 -'  1  0  ~/lab-task-control/install_packages.yml
 -'  34  9  ~/lab-task-control/playbook.yml
 -'  16  0  ~/lab-task-control/playbook.yml
@@ -183,33 +226,123 @@
 -'  1  0  ~/lab-roles/myenv.yml
 -'  4  13  ~/lab-roles/roles/student.myenv/defaults/main.yml
 -'  1  0  ~/lab-roles/roles/student.myenv/defaults/main.yml
--'  7  17  ~/lab-roles/roles/student.myenv/vars/main.yml
--'  1  0  ~/lab-roles/roles/student.myenv/vars/main.yml
--'  1  0  ~/lab-roles/roles/student.myenv/tasks/main.yml
--'  8  21  ~/dev-roles/use-bash_env-role.yml
--'  1  0  ~/dev-roles/use-bash_env-role.yml
--'  5  2  ~/dev-roles/install-roles.yml
--'  1  0  ~/dev-roles/install-roles.yml
--'  3  47  ~/dev-roles/roles/myvhost/meta/main.yml
--'  1  0  ~/dev-roles/roles/myvhost/meta/main.yml
--'  4  20  ~/dev-roles/roles/myfirewall/defaults/main.yml
--'  1  0  ~/dev-roles/roles/myfirewall/defaults/main.yml
--'  7  19  ~/dev-roles/roles/myfirewall/handlers/main.yml
--'  1  0  ~/dev-roles/roles/myfirewall/handlers/main.yml
--'  21  4  ~/dev-roles/roles/myfirewall/tasks/main.yml
--'  1  0  ~/dev-roles/roles/myfirewall/tasks/main.yml
--'  15  5  ~/dev-roles/use-vhost-role.yml
--'  1  0  ~/dev-roles/use-vhost-role.yml
--'  8  19  ~/dev-roles/roles/myvhost/handlers/main.yml
--'  1  0  ~/dev-roles/roles/myvhost/handlers/main.yml
--'  28  18  ~/dev-roles/roles/myvhost/tasks/main.yml
--'  1  0  ~/dev-roles/roles/myvhost/tasks/main.yml
--'  24  6  ~/lab-task-control/playbook.yml
--'  43  8  ~/lab-task-control/playbook.yml
--'  40  6  ~/lab-task-control/playbook.yml
--'  36  2  ~/lab-task-control/playbook.yml
 
 # History of marks within files (newest to oldest):
+
+> ~/lab-task-control/playbook.yml
+	"	43	6
+	^	39	21
+	.	39	20
+	+	33	6
+	+	34	23
+	+	33	0
+	+	17	31
+	+	39	20
+
+> ~/lab-task-control/configure_web.yml
+	"	8	0
+	^	38	68
+	.	38	67
+	+	2	7
+	+	41	1
+	+	42	2
+	+	9	24
+	+	31	22
+	+	38	67
+
+> ~/lab-task-control/install_packages.yml
+	"	14	25
+	.	14	0
+	+	12	1
+	+	13	0
+	+	14	1
+	+	15	2
+	+	4	18
+	+	6	20
+	+	7	9
+	+	6	9
+	+	14	0
+
+> ~/lab-task-control/configure_firewall.yml
+	"	20	2
+	^	12	11
+	.	20	0
+	+	12	10
+	+	20	0
+
+> ~/lab-managing-vars/setup_facts.yml
+	"	10	0
+
+> ~/lab-managing-vars/custom.fact
+	"	7	0
+
+> ~/imp-lab/internet.yml
+	"	43	10
+	^	2	7
+	.	43	10
+	+	15	21
+	+	18	14
+	+	17	41
+	+	21	22
+	+	16	0
+	+	23	0
+	+	22	0
+	+	23	42
+	+	24	16
+	+	24	28
+	+	60	0
+	+	24	30
+	+	60	0
+	+	24	29
+	+	24	7
+	+	24	7
+	+	24	7
+	+	24	7
+	+	24	25
+	+	24	26
+	+	24	7
+	+	24	27
+	+	39	0
+	+	24	0
+	+	38	21
+	+	42	0
+	+	41	0
+	+	42	38
+	+	43	13
+	+	48	0
+	+	49	13
+	+	59	0
+	+	49	0
+	+	50	0
+	+	51	0
+	+	57	23
+	+	15	8
+	+	7	7
+	+	9	13
+	+	10	9
+	+	11	9
+	+	10	9
+	+	11	9
+	+	12	9
+	+	13	9
+	+	14	9
+	+	12	10
+	+	13	10
+	+	14	10
+	+	7	61
+	+	43	13
+	+	24	15
+	+	1	3
+	+	2	6
+	+	3	7
+	+	4	8
+	+	6	0
+	+	5	0
+	+	2	6
+	+	3	7
+	+	4	8
+	+	1	2
+	+	43	10
 
 > ~/git-repos/my_webservers_DEV_2/templates/index.html.j2
 	"	6	0
@@ -227,38 +360,6 @@
 	^	12	1
 	.	12	0
 	+	12	0
-
-> ~/lab-task-control/configure_firewall.yml
-	"	12	10
-	^	12	11
-	.	12	10
-	+	12	10
-
-> ~/lab-task-control/playbook.yml
-	"	18	12
-	^	20	31
-	.	17	31
-	+	33	6
-	+	34	23
-	+	33	0
-	+	17	31
-
-> ~/lab-task-control/configure_web.yml
-	"	42	2
-	^	42	3
-	.	42	2
-	+	2	7
-	+	41	1
-	+	42	2
-
-> ~/lab-task-control/install_packages.yml
-	"	15	2
-	^	15	3
-	.	15	2
-	+	12	1
-	+	13	0
-	+	14	1
-	+	15	2
 
 > ~/lab-ansible-vault/roles/encryptdisk/tasks/main.yml
 	"	41	0
@@ -420,53 +521,3 @@
 	^	1	31
 	.	1	30
 	+	1	30
-
-> ~/configure-delegation/inventory/hosts
-	"	5	22
-	^	5	23
-	.	5	22
-	+	5	22
-
-> ~/lab-roles/roles/myapache/tasks/main.yml
-	"	27	27
-	^	27	28
-	.	27	27
-	+	8	1
-	+	9	25
-	+	11	18
-	+	55	0
-	+	25	0
-	+	24	0
-	+	25	37
-	+	27	24
-	+	28	33
-	+	32	0
-	+	41	0
-	+	33	0
-	+	41	40
-	+	42	8
-	+	44	18
-	+	46	20
-	+	34	0
-	+	34	0
-	+	40	0
-	+	34	31
-	+	36	13
-	+	48	0
-	+	47	0
-	+	48	30
-	+	49	10
-	+	50	15
-	+	51	19
-	+	54	20
-	+	54	0
-	+	27	27
-
-> ~/lab-roles/apache.yml
-	"	6	5
-	^	6	6
-	.	6	5
-	+	5	13
-	+	6	2
-	+	5	11
-	+	6	5

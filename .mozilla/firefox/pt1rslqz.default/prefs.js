@@ -8,11 +8,11 @@
  * To make a manual change to preferences, you can visit the URL about:config
  */
 
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1541439331);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1541740038);
 user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1541688052);
-user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1541688292);
-user_pref("app.update.lastUpdateTime.experiments-update-timer", 1541439211);
-user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1541688412);
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1541747478);
+user_pref("app.update.lastUpdateTime.experiments-update-timer", 1541739918);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1541743758);
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1541688172);
 user_pref("browser.bookmarks.restore_default_bookmarks", false);
 user_pref("browser.cache.disk.capacity", 358400);
@@ -33,26 +33,28 @@ user_pref("browser.preferences.advanced.selectedTabIndex", 1);
 user_pref("browser.reader.detectedFirstArticle", true);
 user_pref("browser.safebrowsing.provider.google.lastupdatetime", "1541438939687");
 user_pref("browser.safebrowsing.provider.google.nextupdatetime", "1541440752687");
-user_pref("browser.safebrowsing.provider.mozilla.lastupdatetime", "1541739803424");
-user_pref("browser.safebrowsing.provider.mozilla.nextupdatetime", "1541743403424");
+user_pref("browser.safebrowsing.provider.mozilla.lastupdatetime", "1541747004161");
+user_pref("browser.safebrowsing.provider.mozilla.nextupdatetime", "1541750604161");
 user_pref("browser.search.countryCode", "US");
 user_pref("browser.search.region", "US");
+user_pref("browser.sessionstore.resume_session_once", true);
 user_pref("browser.slowStartup.averageTime", 6079);
 user_pref("browser.slowStartup.samples", 3);
 user_pref("browser.startup.homepage_override.buildID", "20160907070339");
 user_pref("browser.startup.homepage_override.mstone", "45.4.0");
+user_pref("browser.syncPromoViewsLeftMap", "{\"passwords\":4}");
 user_pref("browser.toolbarbuttons.introduced.pocket-button", true);
 user_pref("datareporting.healthreport.nextDataSubmissionTime", "1541525250407");
 user_pref("datareporting.healthreport.service.firstRun", true);
 user_pref("datareporting.policy.dataSubmissionPolicyAcceptedVersion", 2);
 user_pref("datareporting.policy.dataSubmissionPolicyNotifiedTime", "1541438912578");
 user_pref("datareporting.policy.firstRunTime", "1541438850406");
-user_pref("datareporting.sessions.current.activeTicks", 6);
+user_pref("datareporting.sessions.current.activeTicks", 263);
 user_pref("datareporting.sessions.current.firstPaint", 6319);
 user_pref("datareporting.sessions.current.main", 3172);
 user_pref("datareporting.sessions.current.sessionRestored", 7491);
 user_pref("datareporting.sessions.current.startTime", "1541739794018");
-user_pref("datareporting.sessions.current.totalTime", 32);
+user_pref("datareporting.sessions.current.totalTime", 7880);
 user_pref("datareporting.sessions.currentIndex", 2);
 user_pref("datareporting.sessions.previous.0", "{\"s\":1541438846329,\"a\":47,\"t\":381,\"c\":false,\"m\":2532,\"fp\":5963,\"sr\":6261}");
 user_pref("datareporting.sessions.previous.1", "{\"s\":1541687929121,\"a\":57,\"t\":450,\"c\":false,\"m\":2132,\"fp\":4925,\"sr\":5302}");
@@ -65,7 +67,7 @@ user_pref("extensions.bootstrappedAddons", "{\"loop@mozilla.org\":{\"version\":\
 user_pref("extensions.databaseSchema", 17);
 user_pref("extensions.e10sBlockedByAddons", false);
 user_pref("extensions.enabledAddons", "%7B972ce4c6-7e08-4474-a285-3208198ce6fd%7D:45.4.0");
-user_pref("extensions.getAddons.cache.lastUpdate", 1541439331);
+user_pref("extensions.getAddons.cache.lastUpdate", 1541740039);
 user_pref("extensions.getAddons.databaseSchema", 5);
 user_pref("extensions.lastAppVersion", "45.4.0");
 user_pref("extensions.lastPlatformVersion", "45.4.0");

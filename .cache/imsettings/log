@@ -1,11 +1,11 @@
-[ 1541739698.097840]: IMSettings-Daemon[1761]: INFO: Starting imsettings-daemon...
-[ 1541739698.098524]: IMSettings-Daemon[1761]: INFO:   [HOME=/home/student/.config/imsettings]
-[ 1541739698.098683]: IMSettings-Daemon[1761]: INFO:   [XINPUTRCDIR=/etc/X11/xinit/]
-[ 1541739698.098918]: IMSettings-Daemon[1761]: INFO:   [XINPUTDIR=/etc/X11/xinit/xinput.d/]
+[ 1541773114.562202]: IMSettings-Daemon[4313]: INFO: Starting imsettings-daemon...
+[ 1541773114.563162]: IMSettings-Daemon[4313]: INFO:   [HOME=/home/student/.config/imsettings]
+[ 1541773114.563359]: IMSettings-Daemon[4313]: INFO:   [XINPUTRCDIR=/etc/X11/xinit/]
+[ 1541773114.563659]: IMSettings-Daemon[4313]: INFO:   [XINPUTDIR=/etc/X11/xinit/xinput.d/]
 
-[ 1541739698.099118]: IMSettings-Daemon[1761]: INFO:   [MODULEDIR=/usr/lib64/imsettings]
+[ 1541773114.563856]: IMSettings-Daemon[4313]: INFO:   [MODULEDIR=/usr/lib64/imsettings]
 
-[ 1541739698.099308]: IMSettings-Daemon[1761]: INFO:   [MODULES=gsettings]
+[ 1541773114.564104]: IMSettings-Daemon[4313]: INFO:   [MODULES=gsettings]
 
 imsettings information
 ==========================
@@ -27,18 +27,18 @@ DESKTOP: gnome-classic
 GUESS_DESKTOP: $GDMSESSION
 DISABLE_IMSETTINGS: 
 IMSETTINGS_DISABLE_DESKTOP_CHECK: 
-DBUS_SESSION_BUS_ADDRESS: unix:abstract=/tmp/dbus-O9WjOg3KMA,guid=b7ee3352a2d3c3eaa16ff7db5be514b1
+DBUS_SESSION_BUS_ADDRESS: unix:abstract=/tmp/dbus-Cod7gwgO81,guid=8c7fb7354e09806e6965ff645be5973a
 GTK_IM_MODULE: 
 QT_IM_MODULE: xim
 XMODIFIERS: @im=none
 IMSETTINGS_MODULE: none
 IMSETTINGS_INTEGRATE_DESKTOP: yes
 
-[ 1541739706.163191]: IMSettings-Daemon[1761]: INFO: Attempting to switch IM to none [lang=en_US.UTF-8, update=false]
+[ 1541773121.514832]: IMSettings-Daemon[4313]: INFO: Attempting to switch IM to none [lang=en_US.UTF-8, update=false]
 org.gnome.settings-daemon.plugins.keyboard.active is true. imsettings is going to be disabled.
 
-[ 1541739706.976362]: IMSettings-Daemon[1761]: WARNING **: Current desktop isn't targeted by IMSettings.
+[ 1541773122.311207]: IMSettings-Daemon[4313]: WARNING **: Current desktop isn't targeted by IMSettings.
 
-[ 1541739706.981096]: GLib-GIO[1761]: CRITICAL **: g_dbus_method_invocation_return_value_internal: assertion '(parameters == NULL) || g_variant_is_of_type (parameters, G_VARIANT_TYPE_TUPLE)' failed
-[ 1541739707.297135]: IMSettings-Daemon[1761]: INFO: Unloading imesttings module: gsettings
-[ 1541739707.297810]: IMSettings-Daemon[1761]: INFO: imsettings-daemon is shut down.
+[ 1541773122.317924]: GLib-GIO[4313]: CRITICAL **: g_dbus_method_invocation_return_value_internal: assertion '(parameters == NULL) || g_variant_is_of_type (parameters, G_VARIANT_TYPE_TUPLE)' failed
+[ 1541773122.428633]: IMSettings-Daemon[4313]: INFO: Unloading imesttings module: gsettings
+[ 1541773122.429488]: IMSettings-Daemon[4313]: INFO: imsettings-daemon is shut down.
