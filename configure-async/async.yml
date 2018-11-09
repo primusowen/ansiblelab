@@ -31,6 +31,6 @@
     - name: check status of longfiles script 
       async_status: "jid={{item.ansible_job_id}}" 
       register: job_result
-      until: job_result.finshed
+      until: job_result.finished
       retries: 30
       with_items: "{{script_sleeper.results}}"

@@ -3,8 +3,8 @@
   <context id="">
     <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="2" last-seen="1541688241"/>
     <application id="yelp.desktop" open-window-count="0" score="0" last-seen="1541617346"/>
-    <application id="gnome-terminal.desktop" open-window-count="1" score="10254" last-seen="1541747105"/>
+    <application id="gnome-terminal.desktop" open-window-count="2" score="12387" last-seen="1541794252"/>
     <application id="gnome-control-center.desktop" open-window-count="0" score="4" last-seen="1541689502"/>
-    <application id="firefox.desktop" open-window-count="1" score="2798" last-seen="1541747113"/>
+    <application id="firefox.desktop" open-window-count="1" score="3653" last-seen="1541794311"/>
   </context>
 </application-state>

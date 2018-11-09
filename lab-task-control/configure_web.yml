@@ -7,7 +7,7 @@
 - block:
   - get_url:
       url: "{{ https_uri }}"
-      dest: /etc/httpd/config.d/
+      dest: /etc/httpd/conf.d/
 
   - file:
       path: /etc/httpd/conf.d/ssl
@@ -21,7 +21,7 @@
 
   - stat:
       path: /etc/httpd/conf.d/ssl.conf
-    register: ssL_file
+    register: ssl_file
 
   - shell:
       mv /etc/httpd/conf.d/ssl.conf  /etc/httpd/conf.d/ssl.conf.bak
@@ -29,14 +29,14 @@
 
   - unarchive:
       src: "{{ ssl_uri }}"
-      dest: /etc/httpd/config.d/ssl/
+      dest: /etc/httpd/conf.d/ssl/
       copy: no
     notify:
       - restart_services
 
   - copy:
       content: "{{ ansible_fqdn }} ({{ ansible_default_ipv4.address }}) has been customized by Ansible\n"
-      dest: /var/www/htl/index.html
+      dest: /var/www/html/index.html
 
   when: 
     rpm_check.rc == 0
