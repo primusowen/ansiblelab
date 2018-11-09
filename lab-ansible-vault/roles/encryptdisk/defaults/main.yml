@@ -1,0 +1,13 @@
+---
+# defaults file for encryptdisk
+addkey: no
+
+# tasks file for Ansible Vault lab
+  - name: copying the key file
+    template:
+      src: "{{luks_key}}"
+      dest: /root/keyfile
+      owner: root
+      group: root
+      mode: 0600
+    when: addkey

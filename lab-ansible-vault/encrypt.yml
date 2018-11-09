@@ -1,0 +1,7 @@
+---
+- name: Encrypt disk on serverb using LUKS
+  hosts: prodservers
+  remote_user: devops
+  become: yes
+  roles:
+    - encryptdisk

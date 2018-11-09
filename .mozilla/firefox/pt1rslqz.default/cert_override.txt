@@ -1,0 +1,3 @@
+# PSM Certificate Override Settings file
+# This is a generated file!  Do not edit.
+tower.lab.example.com:443	OID.2.16.840.1.101.3.4.2.1	90:60:DB:8E:05:70:FB:53:55:D9:B6:93:51:BD:4E:21:2B:AB:38:5B:79:3E:AF:8E:EC:3E:13:BD:8E:B1:A2:9B	MU	AAAAAAAAAAAAAAAJAAAAWgDRS+o0lg+JqzBYMQswCQYDVQQGEwJVUzELMAkGA1UE  CAwCTkMxEDAOBgNVBAcMB1JhbGVpZ2gxEDAOBgNVBAoMB0Fuc2libGUxGDAWBgNV  BAMMD3d3dy5hbnNpYmxlLmNvbQ==

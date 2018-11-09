@@ -1,0 +1,5 @@
+[user]
+	name = Daniel George
+	email = daniel@lab.example.com
+[push]
+	default = simple
